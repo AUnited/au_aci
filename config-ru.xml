@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <config>
     <fields name="Настройки" icon="uk-icon-cogs">
-        <field type="section" name="Styles" description="Используйте редактор, чтобы создать свой собственный стиль. Вы можете выбирать цвета, изменять размеры и многое другое с предпросмотром в реальном времени. Выберите стиль для загрузки в настройках обложки." />
-        <field type="customizer" />
+        <field type="section" name="Стили" description="Используйте редактор, чтобы создать свой собственный стиль. Вы можете выбирать цвета, изменять размеры и многое другое с предпросмотром в реальном времени. Выберите стиль для загрузки в настройках обложки." />
+        <field type="customizer" label="Редактор"/>
         <field type="section" name="Разработка" description="Всегда убирайте галочки со следующих пунктов на рабочем сайте." />
         <field type="checkbox" name="dev_mode" value="1" label="Компилировать LESS в браузере при каждой загрузке страницы." />
         <field type="checkbox" name="dynamic_style" value="1" label="Разрешать загружать стили по URL. Этот пункт отменит первоначально загруженный стиль." />
         <field type="compile" />
-        <field type="section" name="Сжатие" description="Менимизируйте CSS и JavaScript в один файл. Используйте gzip сжатие и Data URIs чтобы уменьшить количество запросов файлов изображений." />
+        <field type="section" name="Сжатие" description="Минимизируйте CSS и JavaScript в один файл. Используйте gzip сжатие и Data URIs чтобы уменьшить количество запросов файлов изображений." />
         <field type="select" name="compression" default="0">
             <option value="0">Не сжимать</option>
             <option value="1">Сжать</option>
@@ -16,9 +16,9 @@
         </field>
         <field type="section" name="Адаптивность" description="Тег viewport настраивает стиль в мобильных браузерах. Если не задано, по умолчанию ширина на мобильных платформах составляет 980px и сайт будет отображаться точно так же, как и на стационарных компьютерах." />
         <field type="checkbox" name="responsive" value="0" label="Отключить viewport meta tag." />
-        <field type="section" name="Bootstrap" description="If you just use the Joomla blog and articles you don't need to load Bootstrap." />
+        <field type="section" name="Bootstrap" description="Если Вы используете только блог и материалы Joomla, вам не нужно загружать Bootstrap." />
         <field type="checkbox" name="bootstrap" value="0" label="Отключить Bootstrap." />
-        <field type="section" name="Content" description="Отображать специальные элементы содержимого темы." />
+        <field type="section" name="Содержимое" description="Отображать специальные элементы содержимого темы." />
         <field type="checkbox" name="totop_scroller" value="0" label="Скрыть To-top scroller." />
         <field type="checkbox" name="warp_branding" value="0" label="Скрыть бренд Warp." />
         <field type="section" name="Социальные сети" description="Отображать Tweet, Google+ или кнопки Like buttons в ваших сообщениях, чтобы поделиться ими в социальных сетях." />
@@ -27,7 +27,7 @@
         <field type="checkbox" name="facebook" value="1" label="Показывать кнопку Facebook &quot;Мне нравится&quot;." />
         <field type="checkbox" name="vkontakte" value="1" label="Показывать кнопку Vkontakte &quot;Мне нравится&quot;." />
         <field type="checkbox" name="odnoklassniki" value="1" label="Показывать кнопку Odnoklassniki &quot;Мне нравится&quot;." />
-        <field type="section" name="Modules" description="Выберите стиль модулей по умолчанию для каждой позиции." />
+        <field type="section" name="Модули" description="Выберите стиль модулей по умолчанию для каждой позиции." />
         <field type="table" name="panel_default">
             <rows label="Позиции">
                 <row>top-a</row>
@@ -48,22 +48,22 @@
                 <option value="uk-panel uk-panel-space">Space</option>
             </field>
         </field>
-        <field type="section" name="Дополнительные скрипты" description="Insert your Google Analytics tracking code or any other additional scripts here. They will be added before the closing body tag in the theme." />
+        <field type="section" name="Дополнительные скрипты" description="Вставьте сюда дополнительные скрипты. Они будут добавлены перед закрывающимся тегом." />
         <field type="textarea" name="tracking_code" class="uk-form-width-large" rows="8" />
     </fields>
-    <fields name="Layouts" icon="uk-icon-columns">
-        <field type="layouts" name="layouts">
-            <field type="section" name="Style" description="Select which style the layout should load." />
+    <fields name="Обложки" icon="uk-icon-columns">
+        <field type="layouts" name="Обложки">
+            <field type="section" name="Стили" description="Выберите, какой стиль обложки будет загружен." />
             <field type="style" name="style" />
-            <field type="section" name="Content" description="Display specific content elements in the theme." />
-            <field type="checkbox" name="system_output" value="0" label="Hide system output." />
-            <field type="section" name="Sidebars" description="Choose the sidebar widths and align the sidebar to the left or right." />
+            <field type="section" name="Содержимое" description="Отображает специальные элементы содержимого в темеe." />
+            <field type="checkbox" name="system_output" value="0" label="Скрыть вывод системы." />
+            <field type="section" name="Боковые элементы" description="Выберите ширину и выравнивание боковых элементов, а также позиционирование влево или вправо." />
             <field type="table" name="sidebars">
-                <rows label="Position">
+                <rows label="Позиция">
                     <row>sidebar-a</row>
                     <row>sidebar-b</row>
                 </rows>
-                <field type="select" name="width" label="Width">
+                <field type="select" name="width" label="Ширина">
                     <option value="12" data-gcf="6">20%</option>
                     <option value="15" data-gcf="15">25%</option>
                     <option value="18" data-gcf="6">30%</option>
@@ -71,14 +71,14 @@
                     <option value="24" data-gcf="6">40%</option>
                     <option value="30" data-gcf="3">50%</option>
                 </field>
-                <field type="select" name="alignment" label="Alignment">
-                    <option value="left">Left</option>
-                    <option value="right">Right</option>
+                <field type="select" name="alignment" label="Выравнивание">
+                    <option value="left">Слева</option>
+                    <option value="right">Справа</option>
                 </field>
             </field>
-            <field type="section" name="Grid" description="Choose the grid layout for each position. Further, you can enable horizontal dividers and prevent the responsive grid behavior. Note: Both options are not taken into account for the stacked layout." />
+            <field type="section" name="Сетка" description="Выберите макет сетки для каждой позиции. Кроме того, вы можете включить горизонтальные разделители и предотвратить отзывчивое поведение сетки . Примечание: Оба варианта не будут приняты во внимание при слиянии макета." />
             <field type="table" name="grid">
-                <rows label="Position">
+                <rows label="Позиция">
                     <row>top-a</row>
                     <row>top-b</row>
                     <row>bottom-a</row>
@@ -86,26 +86,26 @@
                     <row>main-top</row>
                     <row>main-bottom</row>
                 </rows>
-                <field type="select" name="layout" label="Layout">
+                <field type="select" name="layout" label="Обложка">
                     <option value="parallel">Parallel</option>
                     <option value="stacked">Stacked</option>
                     <option value="doubled">First doubled</option>
                     <option value="doubled-last">Last doubled</option>
                 </field>
-                <field type="select" name="responsive" label="Responsive" default="medium">
-                    <option value="">Disabled</option>
-                    <option value="medium">Stack on phones</option>
-                    <option value="large">Stack on ≤ tablets</option>
+                <field type="select" name="responsive" label="Отклик" default="medium">
+                    <option value="">Отключено</option>
+                    <option value="medium">На телефонах</option>
+                    <option value="large">На планшетах и меньше</option>
                 </field>
                 <field type="checkbox" name="divider" value="1" column="Divider" />
             </field>
         </field>
     </fields>
-    <fields name="Modules" icon="uk-icon-th">
+    <fields name="Модули" icon="uk-icon-th">
         <field type="widgets" name="widgets">
-            <field type="text" name="class" label="Class" class="uk-form-width-small" tooltip="Add custom classes." />
-            <field type="select" name="panel" label="Style" tooltip="Choose module styles. Set the default module style in the settings.">
-                <option value="">Default</option>
+            <field type="text" name="class" label="Классы" class="uk-form-width-small" tooltip="Добавить дополнительные классы." />
+            <field type="select" name="panel" label="Стили" tooltip="Выберите стили модулей. Set the default module style in the settings.">
+                <option value="">По умолчанию</option>
                 <option value="uk-panel uk-panel-box">Box</option>
                 <option value="uk-panel uk-panel-box uk-panel-box-primary">Box Primary</option>
                 <option value="uk-panel uk-panel-box uk-panel-box-secondary">Box Secondary</option>
@@ -114,27 +114,27 @@
                 <option value="uk-panel">Blank</option>
             </field>
             <field type="checkbox" name="center" value="0" label="Center" />
-            <field type="select" name="title_size" label="Title" tooltip="Set the size of the title.">
-                <option value="uk-panel-title">Default</option>
+            <field type="select" name="title_size" label="Title" tooltip="Задайте размер заголовка.">
+                <option value="uk-panel-title">По умолчанию</option>
                 <option value="uk-h1 uk-margin-top-remove">H1</option>
                 <option value="uk-h2 uk-margin-top-remove">H2</option>
                 <option value="uk-h3 uk-margin-top-remove">H3</option>
                 <option value="uk-h4 uk-margin-top-remove">H4</option>
-                <option value="uk-heading-large uk-margin-top-remove">Extra Large</option>
+                <option value="uk-heading-large uk-margin-top-remove">Очень большой</option>
             </field>
-            <field type="text" name="icon" label="Icon" class="uk-form-width-small" tooltip="Add UIkit icon classes or image urls." />
+            <field type="text" name="icon" label="Icon" class="uk-form-width-small" tooltip="Добавьте классы UIkit или адреса картинок." />
             <field type="badge" name="badge" label="Badge" tooltip="Set the badge colors and text.">
-                <option value="uk-panel-badge uk-badge">Default</option>
-                <option value="uk-panel-badge uk-badge uk-badge-success">Success</option>
-                <option value="uk-panel-badge uk-badge uk-badge-warning">Warning</option>
-                <option value="uk-panel-badge uk-badge uk-badge-danger">Danger</option>
+                <option value="uk-panel-badge uk-badge">По умолчанию</option>
+                <option value="uk-panel-badge uk-badge uk-badge-success">Успех</option>
+                <option value="uk-panel-badge uk-badge uk-badge-warning">Внимание</option>
+                <option value="uk-panel-badge uk-badge uk-badge-danger">Опасность</option>
             </field>
-            <field type="display" name="display" label="Display" tooltip="Display or hide modules on certain devices." />
+            <field type="display" name="display" label="Отображать" tooltip="Отображать или скрывать модули на всех устройствах." />
         </field>
     </fields>
     <fields name="Меню" icon="uk-icon-bars">
         <field type="menus">
-            <field type="select" name="columns" default="1" label="Columns" max-depth="1">
+            <field type="select" name="columns" default="1" label="Колонки" max-depth="1">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
