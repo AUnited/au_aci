@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <config>
-    <fields name="Settings" icon="uk-icon-cogs">
-        <field type="section" name="Styles" description="Use the customizer to create your own style. You can pick colors, modify sizes and much more with a real time theme preview. Choose the style to be loaded in the layout options." />
+    <fields name="Настройки" icon="uk-icon-cogs">
+        <field type="section" name="Styles" description="Используйте редактор, чтобы создать свой собственный стиль. Вы можете выбирать цвета, изменять размеры и многое другое с предпросмотром в реальном времени. Выберите стиль для загрузки в настройках обложки." />
         <field type="customizer" />
-        <field type="section" name="Development" description="Always uncheck following options for your production website." />
-        <field type="checkbox" name="dev_mode" value="1" label="Compile LESS in the browser on every page load." />
-        <field type="checkbox" name="dynamic_style" value="1" label="Allow styles to be loaded by URL. This will override the style originally loaded by the theme." />
+        <field type="section" name="Разработка" description="Всегда убирайте галочки со следующих пунктов на рабочем сайте." />
+        <field type="checkbox" name="dev_mode" value="1" label="Компилировать LESS в браузере при каждой загрузке страницы." />
+        <field type="checkbox" name="dynamic_style" value="1" label="Разрешать загружать стили по URL. Этот пункт отменит первоначально загруженный стиль." />
         <field type="compile" />
-        <field type="section" name="Compression" description="Minify CSS and JavaScript into a single file. Use gzip compression and Data URIs to reduce image file requests." />
+        <field type="section" name="Сжатие" description="Менимизируйте CSS и JavaScript в один файл. Используйте gzip сжатие и Data URIs чтобы уменьшить количество запросов файлов изображений." />
         <field type="select" name="compression" default="0">
-            <option value="0">None</option>
-            <option value="1">Minify</option>
-            <option value="2">Minify + Data URIs</option>
-            <option value="3">Minify + Data URIs + Gzip</option>
+            <option value="0">Не сжимать</option>
+            <option value="1">Сжать</option>
+            <option value="2">Сжать + Data URIs</option>
+            <option value="3">Сжать + Data URIs + Gzip</option>
         </field>
-        <field type="section" name="Responsive" description="The viewport meta tag controls the layout on mobile browsers. If it's not set, the default width on mobile is 980px and the site will look the same like on desktops." />
-        <field type="checkbox" name="responsive" value="0" label="Disable the viewport meta tag." />
+        <field type="section" name="Адаптивность" description="Тег viewport настраивает стиль в мобильных браузерах. Если не задано, по умолчанию ширина на мобильных платформах составляет 980px и сайт будет отображаться точно так же, как и на стационарных компьютерах." />
+        <field type="checkbox" name="responsive" value="0" label="Отключить viewport meta tag." />
         <field type="section" name="Bootstrap" description="If you just use the Joomla blog and articles you don't need to load Bootstrap." />
-        <field type="checkbox" name="bootstrap" value="0" label="Disable Bootstrap." />
-        <field type="section" name="Content" description="Display specific content elements in the theme." />
-        <field type="checkbox" name="totop_scroller" value="0" label="Hide To-top scroller." />
-        <field type="checkbox" name="warp_branding" value="0" label="Hide Warp branding." />
-        <field type="section" name="Social Buttons" description="Display Tweet, Google+ or Like buttons in your posts to share them in social media." />
-        <field type="checkbox" name="twitter" value="1" label="Show Tweet button." />
-        <field type="checkbox" name="plusone" value="1" label="Show Google+ button." />
-        <field type="checkbox" name="facebook" value="1" label="Show Facebook Like button." />
-        <field type="checkbox" name="vkontakte" value="1" label="Show VKontakte Like button." />
-        <field type="checkbox" name="odnoklassniki" value="1" label="Show Odnoklassniki Like button." />
-        <field type="section" name="Modules" description="Choose the default module style for each position." />
+        <field type="checkbox" name="bootstrap" value="0" label="Отключить Bootstrap." />
+        <field type="section" name="Content" description="Отображать специальные элементы содержимого темы." />
+        <field type="checkbox" name="totop_scroller" value="0" label="Скрыть To-top scroller." />
+        <field type="checkbox" name="warp_branding" value="0" label="Скрыть бренд Warp." />
+        <field type="section" name="Социальные сети" description="Отображать Tweet, Google+ или кнопки Like buttons в ваших сообщениях, чтобы поделиться ими в социальных сетях." />
+        <field type="checkbox" name="twitter" value="1" label="Показывать кнопку Твитнуть." />
+        <field type="checkbox" name="plusone" value="1" label="Показывать кнопку Google+." />
+        <field type="checkbox" name="facebook" value="1" label="Показывать кнопку Facebook &quot;Мне нравится&quot;." />
+        <field type="checkbox" name="vkontakte" value="1" label="Показывать кнопку Vkontakte &quot;Мне нравится&quot;." />
+        <field type="checkbox" name="odnoklassniki" value="1" label="Показывать кнопку Odnoklassniki &quot;Мне нравится&quot;." />
+        <field type="section" name="Modules" description="Выберите стиль модулей по умолчанию для каждой позиции." />
         <field type="table" name="panel_default">
-            <rows label="Position">
+            <rows label="Позиции">
                 <row>top-a</row>
                 <row>top-b</row>
                 <row>bottom-a</row>
@@ -39,7 +39,7 @@
                 <row>sidebar-a</row>
                 <row>sidebar-b</row>
             </rows>
-            <field type="select" name="panel" label="Style">
+            <field type="select" name="panel" label="Стиль">
                 <option value="uk-panel">Blank</option>
                 <option value="uk-panel uk-panel-box">Box</option>
                 <option value="uk-panel uk-panel-box uk-panel-box-primary">Box Primary</option>
@@ -48,7 +48,7 @@
                 <option value="uk-panel uk-panel-space">Space</option>
             </field>
         </field>
-        <field type="section" name="Additional Scripts" description="Insert your additional scripts here. They will be added before the closing body tag in the theme." />
+        <field type="section" name="Дополнительные скрипты" description="Insert your Google Analytics tracking code or any other additional scripts here. They will be added before the closing body tag in the theme." />
         <field type="textarea" name="tracking_code" class="uk-form-width-large" rows="8" />
     </fields>
     <fields name="Layouts" icon="uk-icon-columns">
@@ -132,7 +132,7 @@
             <field type="display" name="display" label="Display" tooltip="Display or hide modules on certain devices." />
         </field>
     </fields>
-    <fields name="Menus" icon="uk-icon-bars">
+    <fields name="Меню" icon="uk-icon-bars">
         <field type="menus">
             <field type="select" name="columns" default="1" label="Columns" max-depth="1">
                 <option value="1">1</option>
@@ -140,17 +140,17 @@
                 <option value="3">3</option>
                 <option value="4">4</option>
             </field>
-            <field type="text" name="columnwidth" label="Column Width" class="uk-form-width-small" placeholder="px" max-depth="1" />
-            <field type="text" name="icon" label="Icon" class="uk-form-width-small" tooltip="Add UIkit icon classes or image urls." />
+            <field type="text" name="columnwidth" label="Ширина колонки" class="uk-form-width-small" placeholder="px" max-depth="1" />
+            <field type="text" name="icon" label="Иконка" class="uk-form-width-small" tooltip="Add UIkit icon classes or image urls." />
             <field type="text" name="subtitle" label="Subtitle" class="uk-form-width-small" tooltip="Add subtitles tu menu items." />
         </field>
     </fields>
-    <fields name="Information" icon="uk-icon-info-circle">
-        <field type="section" name="Versions" description="This theme is based on the Warp framework. Always keep the theme and the Warp framework up-to-date." />
+    <fields name="Информация" icon="uk-icon-info-circle">
+        <field type="section" name="Версии" description="Эта тема основана на Warp framework. Всегда обновляйте данную тему и Warp framework." />
         <field type="info" />
-        <field type="section" name="System Check" />
+        <field type="section" name="Проверка системы" />
         <field type="check" />
-        <field type="section" name="File Verification" />
+        <field type="section" name="Проверка файлов" />
         <field type="verify" />
     </fields>
 </config>
