@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE install PUBLIC "-//Joomla! 1.7//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.7/template-install.dtd">
+<!DOCTYPE install PUBLIC "-//Joomla! 3.0//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/3.0/template-install.dtd">
 <extension version="3.5" type="template" client="site" method="upgrade">
 	<name>au_aci</name>
-	<version>1.0.0</version>
+	<version>0.1.0</version>
 	<creationDate>August 2016</creationDate>
-	<author>YOOtheme</author>
-	<authorEmail>info@yootheme.com</authorEmail>
-	<authorUrl>http://www.yootheme.com</authorUrl>
+	<author>Amvis United Company Limited</author>
+	<authorEmail>info@aunited.ru</authorEmail>
+	<authorUrl>http://aunited.ru</authorUrl>
     <copyright>Copyright (C) Aunited Company Limited</copyright>
     <license>http://www.gnu.org/licenses/gpl.html GNU/GPL</license>
 	<description>Based on Master theme of the YOOtheme club. It is based on YOOtheme's Warp theme framework.</description>
@@ -56,7 +56,7 @@
         <position settings="">debug</position>
     </positions>
 	<config>
-		<fields name="params" addfieldpath="/templates/yoo_master2/warp/systems/joomla/config/elements">
+		<fields name="params" addfieldpath="/templates/au_aci/warp/systems/joomla/config/elements">
 			<fieldset name="options">
 		    	<field name="config" type="config" label="Config" description="" default="" />
 			</fieldset>
