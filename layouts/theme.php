@@ -14,7 +14,7 @@ include($this['path']->path('layouts:theme.config.php'));
 <html lang="<?php echo $this['config']->get('language'); ?>" dir="<?php echo $this['config']->get('direction'); ?>"  data-config='<?php echo $this['config']->get('body_config','{}'); ?>'>
 
 <head>
-	<link rel="shortcut icon" href="images/myicon.ico" />
+	<link rel="shortcut icon" href="<?php $this->baseurl; ?>/myicon.ico" />
 <?php echo $this['template']->render('head'); ?>
 </head>
 
