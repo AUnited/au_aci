@@ -35,14 +35,14 @@
 		<folder>warp</folder>
 	</files>
     <positions>
-        <position settings="">search</position>
-        <position settings="">logo</position>
-        <position settings="">logo-small</position>
-        <position settings="">menu</position>
-        <position settings="">toolbar-l</position>
-        <position settings="">toolbar-r</position>
-        <position settings="">headerbar</position>
-        <position settings="">breadcrumbs</position>
+        <position>search</position>
+        <position>logo</position>
+        <position>logo-small</position>
+        <position>menu</position>
+        <position>toolbar-l</position>
+        <position>toolbar-r</position>
+        <position>headerbar</position>
+        <position>breadcrumbs</position>
         <position>top-a</position>
         <position>top-b</position>
         <position>bottom-a</position>
@@ -51,9 +51,9 @@
         <position>main-bottom</position>
         <position>sidebar-a</position>
         <position>sidebar-b</position>
-        <position settings="">footer</position>
-        <position settings="">offcanvas</position>
-        <position settings="">debug</position>
+        <position>footer</position>
+        <position>offcanvas</position>
+        <position>debug</position>
     </positions>
 	<config>
 		<fields name="params" addfieldpath="/templates/au_aci/warp/systems/joomla/config/elements">
