@@ -1,11 +1,80 @@
 <?php
 /**
-* @package   yoo_master2
-* @author    YOOtheme http://www.yootheme.com
-* @copyright Copyright (C) YOOtheme GmbH
-* @license   http://www.gnu.org/licenses/gpl.html GNU/GPL
+* @package   au_aci
 */
+//new code
+<div id="wrap">
+			<!--Navigation-->
+				<header id="header">
 
+					<div class="container-fluid">
+
+						<!-- Header -->
+						<div class="row">
+							<div id="header" class="col-md-12">
+								<?php  if($this->countModules('header')) { ?>
+    <jdoc:include type="modules" name="header" style="block" />
+<?php } ?>
+</div>
+</div>
+<!-- Header -->
+
+</div>
+
+</header>
+<!--Navigation-->
+<section>
+
+    <div class="container-fluid">
+
+        <!-- Область между header и footer -->
+        <div class="row">
+
+            <!-- nav -->
+            <div id="nav" class="col-md-3 col-sm-12">
+                <?php  if($this->countModules('nav')) { ?>
+                    <jdoc:include type="modules" name="nav" style="block" />
+                <?php } ?>
+            </div>
+            <!-- nav -->
+
+            <!-- article -->
+            <div id="article" class="col-md-6 col-sm-12">
+                <jdoc:include type="message" />
+                <jdoc:include type="component" />
+            </div>
+            <!-- article -->
+
+            <!-- aside -->
+            <div id="aside" class="col-md-3 col-sm-12">
+                <?php  if($this->countModules('aside')) { ?>
+                    <jdoc:include type="modules" name="aside" style="block" />
+                <?php } ?>
+            </div>
+            <!-- aside -->
+
+        </div>
+        <!-- Область между header и footer -->
+
+        <!-- Footer -->
+        <div class="row">
+            <div id="footer" class="col-md-12">
+                <?php  if($this->countModules('footer')) { ?>
+                    <jdoc:include type="modules" name="footer" style="block" />
+                <?php } ?>
+            </div>
+        </div>
+        <!-- Footer -->
+
+    </div>
+
+</section>
+<!-- page -->
+<!-- JS -->
+<script type="text/javascript" src="<?php echo $tpath; ?>/js/template.js"></script>
+<!-- JS -->
+</body>
+//end new code
 // get theme configuration
 include($this['path']->path('layouts:theme.config.php'));
 ?>
