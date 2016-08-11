@@ -1,8 +1,9 @@
-<?php
-/**
+<!--/**
 * @package   au_aci
 */
-//new code
+//new code-->
+<link rel="stylesheet" href="templates/au_aci/css/template.css"
+      xmlns:jdoc="http://www.w3.org/2001/XInclude" xmlns:jdoc="http://www.w3.org/1999/XSL/Transform" xmlns:jdoc="">
 <div id="wrap">
 			<!--Navigation-->
 				<header id="header">
@@ -12,9 +13,9 @@
 						<!-- Header -->
 						<div class="row">
 							<div id="header" class="col-md-12">
-								<?php  if($this->countModules('header')) { ?>
+
     <jdoc:include type="modules" name="header" style="block" />
-<?php } ?>
+
 </div>
 </div>
 <!-- Header -->
@@ -32,9 +33,9 @@
 
             <!-- nav -->
             <div id="nav" class="col-md-3 col-sm-12">
-                <?php  if($this->countModules('nav')) { ?>
-                    <jdoc:include type="modules" name="nav" style="block" />
-                <?php } ?>
+
+                    <jdoc:include type="modules" name="menu" style="block" />
+
             </div>
             <!-- nav -->
 
@@ -47,9 +48,9 @@
 
             <!-- aside -->
             <div id="aside" class="col-md-3 col-sm-12">
-                <?php  if($this->countModules('aside')) { ?>
+
                     <jdoc:include type="modules" name="aside" style="block" />
-                <?php } ?>
+
             </div>
             <!-- aside -->
 
@@ -59,9 +60,9 @@
         <!-- Footer -->
         <div class="row">
             <div id="footer" class="col-md-12">
-                <?php  if($this->countModules('footer')) { ?>
+
                     <jdoc:include type="modules" name="footer" style="block" />
-                <?php } ?>
+
             </div>
         </div>
         <!-- Footer -->
@@ -75,6 +76,7 @@
 <!-- JS -->
 </body>
 //end new code
+	<?php
 // get theme configuration
 include($this['path']->path('layouts:theme.config.php'));
 ?>
